@@ -1,0 +1,36 @@
+IF DB_ID('dbunits') IS NULL
+CREATE DATABASE dbunits;
+GO
+
+USE dbunits;
+GO
+
+CREATE TABLE units (
+	id INT NOT NULL PRIMARY KEY IDENTITY,
+	name VARCHAR(30),
+	lat FLOAT,
+	Lon FLOAT
+);
+
+INSERT INTO units VALUES 
+('unit1', 55.073058, 82.948408),
+('unit2', 55.075783, 83.028128),
+('unit3', 54.969150, 82.860395),
+('unit4', 55.013622, 82.809060),
+('unit5', 54.985155, 82.998645),
+('unit6', 54.985155, 82.998645),
+('unit7', 54.854932, 83.071796),
+('unit8', 54.961084, 83.136566),
+('unit9', 55.051513, 83.002003),
+('unit10', 55.031650, 82.969602),
+('unit11', 55.043833, 83.0465);
+
+
+
+
+
+
+
+
+
+
